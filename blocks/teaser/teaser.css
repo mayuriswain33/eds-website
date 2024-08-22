@@ -1,6 +1,6 @@
 .teaser{
-    background-color:#917898 ;
-    color:#000;
+    background-color: var(--teaser-background-color);
+    color: var(--dark-color);
     padding:10px;
     width:1200px;
 }
