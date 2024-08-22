@@ -13,7 +13,7 @@ export default async function decorate(block) {
     anchorLink.target = '_blank';
     anchorLink.title = clickHereForMore;
     anchorLink.textContent = clickHereForMore;
-    anchorLink.classList.add('anchor-anchorLink');
+    anchorLink.classList.add('anchor-link');
 
     while (row.firstElementChild) li.append(row.firstElementChild);
     [...li.children].forEach((div) => {
