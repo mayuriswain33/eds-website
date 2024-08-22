@@ -10,7 +10,7 @@ export default async function decorate(block) {
 
     const anchorLink = document.createElement('a');
     anchorLink.href = 'https://www.aem.live/docs/';
-    anchorLink.target = "_blank";
+    anchorLink.target = '_blank';
     anchorLink.title = clickHereForMore;
     anchorLink.textContent = clickHereForMore;
     anchorLink.classList.add('anchor-anchorLink');
