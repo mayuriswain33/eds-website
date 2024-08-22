@@ -13,11 +13,15 @@
 :root {
   /* colors */
   --background-color:#00FFFF;
+  --banner-background-color:#0000FF;
+  --homepage-background-color:#ccc;
+  --anchor-link-background-color:#f0f0f0;
   --light-color: #f8f8f8;
   --dark-color: #505050;
   --text-color:#ff00ff;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
+
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
@@ -249,18 +253,20 @@ main > .section:first-of-type {
 }
 
 /* section metadata */
+
 main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
 }
+
 /* Day 1 (Part 2) Assignment #3 start */
 
 .light-grey{
-  background-color: #ccc;
+  background-color: var( --homepage-background-color);
   height: 400px;
-  color: #000;
+  color: var(--link-color);
   font-size: 24px;
   display: flex;
   justify-content: center;
@@ -282,21 +288,6 @@ main .section.highlight {
 
 .button-container{
   text-align: center;
-}
-
-.section.linkstyle .button-container .button {
-  background-image: linear-gradient(rgba(179, 132, 201, .84), rgba(152, 81, 244, 0.84) 50%);
-  color:#fff;             
-  padding: 10px 20px;        
-  text-decoration: none;     
-  border-radius: 25px;        
-  font-size: 16px;          
-  display: inline-block;     
-}
-
-.section.linkstyle .button-container .button:hover {
-  background-image: linear-gradient(rgba(98, 189, 219, 0.84), rgba(65, 156, 199, 0.84) 50%);
-  color:#000;
 }
 
 /* Day 2 – Part 1  Assignment #1 end  */
