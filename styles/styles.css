@@ -264,15 +264,10 @@ main .section.highlight {
 
 /* Day 1 (Part 2) Assignment #3 start */
 
-.light-grey{
+.homepage-content{
   background-color: var( --homepage-background-color);
   height: 400px;
-  color: var(--link-color);
-  font-size: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; 
+  color: var(--link-color); 
 }
 
 /* Day 1 (Part 2) Assignment #3 end */
@@ -280,7 +275,7 @@ main .section.highlight {
 
 /* Day 2 – Part 1  Assignment #1 start  */
 
-.imagesection img {
+.image-section img {
   width: 100%; 
   height: auto; 
   display: block; 
