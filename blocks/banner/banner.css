@@ -1,0 +1,9 @@
+.banner-wrapper{
+background-color: var(--banner-background-color);
+color: var(--light-color);
+}
+
+.banner img{
+width: 100%;
+height: 300px;
+}

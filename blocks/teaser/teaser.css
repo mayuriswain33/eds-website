@@ -1,0 +1,6 @@
+.teaser{
+    background-color: var(--teaser-background-color);
+    color: var(--dark-color);
+    padding:10px;
+    width:1200px;
+}

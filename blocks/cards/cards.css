@@ -25,3 +25,20 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
+/* Day 2 – Part 1  Assignment #5 start  */
+.anchor-link{
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  padding-left: 15px; 
+  background-color: var(--anchor-link-background-color); 
+  border: 1px solid var(--light-color); 
+  border-radius: 4px; 
+  color: #333; 
+  font-size: 16px; 
+  width: 200px;
+  margin-left: 25px;
+}
+
+/* Day 2 – Part 1  Assignment #5 end  */
