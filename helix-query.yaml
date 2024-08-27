@@ -1,0 +1,50 @@
+
+indices:
+  mysite:
+    include:
+      - "**"
+    exclude:
+      - '**/Document.*'
+    target: /query-index.json
+    properties:
+      author:
+        select: head > meta[name="author"]
+        value: |
+          match(el, 'by (.*)')
+        faceted: true
+      title:
+        select: main > div > h1:first-of-type
+        value: |
+          textContent(el)
+      date:
+        select: main > div:nth-of-type(3)
+        value: |
+          parseTimestamp(match(el, '[Oo][Nn] \\d\\d-\\d\\d-\\d\\d\\d\\d'), 'MM-DD-YYYY')
+      topics:
+        select: main > div:last-of-type > p:first-of-type
+        values: |
+          match(el, '(Topics: )? ([^,]+)')
+      image:
+        select: head > meta[property="og:image"]
+        value: |
+          match(attribute(el, 'content'), 'https:\/\/[^/]+(\/.*)')
+      description:
+        select: head > meta[name="description"]
+        value: |
+          attribute(el, 'content')
+      category:
+        select: head > meta[name="category"]
+        value: |
+          attribute(el, 'content')
+      topics:
+        select: head > meta[name="topics"]
+        value: |
+          attribute(el, 'content')
+      last-modified:
+        select: none
+        value: |
+          parseTimestamp(headers['last-modified'], 'ddd, DD MMM YYYY hh:mm:ss GMT')
+      external-path:
+        select: none
+        value: |
+          replace(path, '/test', '/')

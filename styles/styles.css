@@ -22,6 +22,8 @@
   --text-color:#f0f;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
+  --pagination-controls-backgroung-color:#0056b3;
+  --pagination-controls-disabled-backgroung-color:#ccc;
 
 
   /* fonts */
