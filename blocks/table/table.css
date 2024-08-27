@@ -1,0 +1,44 @@
+
+.countries-block table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  border:2px solid var(--dark-color);
+}
+
+.countries-block th {
+  background-color: var( --banner-background-color);
+  color: var(--light-color);
+  padding: 10px;
+  border-bottom: 1px solid var(--dark-color);
+}
+
+.countries-block td {
+  padding: 10px;
+  border-bottom: 1px solid var(--dark-color);
+  border-left: 1px solid var(--dark-color);
+}
+
+.countries-block tr:nth-child(even) {
+  background-color: var(--light-color);
+}
+
+
+.pagination-controls button {
+  background-color: var( --link-color);
+  color: var(--dark-color);
+  border: none;
+  width: 150px;
+  height: 50px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination-controls button:disabled {
+  background-color: var( --pagination-controls-disabled-backgroung-color);
+  cursor: not-allowed;
+}
+
+
+
